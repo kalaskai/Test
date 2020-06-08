@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Kollo sommaren 2020</title>
+        <meta name="description" content="Kollo sommaren 2020">
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="wrapper">
+        <h1>Kollo sommaren 2020</h1>
+        
+        <p>Kollo är en lägerverksamhet för barn som är mellan 10 och 15 år gamla. Läs om några av våra aktiviteter och skicka in en anmälan om du är intreserad av kollo 2020.</p>
+        
+        <h2>Populära aktiviteter</h2>
+        <div class="flex-grid">
+            <div class="grid-content-box">
+                <div class="grid-content-box-inside">
+                    <img src="pics/mat.jpg" alt="">
+                    <h3>Matlagning</h3>
+                    <p>Vi lagar mat och har roligt tillsammans</p>
+                </div>
+            </div>
+            
+            <div class="grid-content-box">
+                <div class="grid-content-box-inside">
+                    <img src="pics/lekar.jpg" alt="">
+                    <h3>Lekar</h3>
+                    <p>Vi leker roliga lekar både ute och inomhus</p>
+                </div>
+            </div>
+            
+            <div class="grid-content-box">
+                <div class="grid-content-box-inside">
+                    <img src="pics/slojd.jpg" alt="">
+                    <h3>Slöjd</h3>
+                    <p>Träslöjd och syslöjd i fina nya lokaler</p>
+                </div>
+            </div>
+            
+            <div class="grid-content-box">
+                <div class="grid-content-box-inside">
+                    <img src="pics/sport.jpg" alt="">
+                    <h3>Sport</h3>
+                    <p>Testa på olika nya idrotter och sporter</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Anmäl dig till kollo</h3>
+        
+        
+        <p>
+            <strong>Personuppgifter</strong>
+        </p>
+        <form action="" id="form">
+            <div class="inputform">
+                <label for="namn">Förnamn</label>
+                <input type="text" name="namn" id="namn" value="" required>
+            </div> 
+            <div class="inputform">
+                <label for="epost">Epost</label>
+                <input type="epost" name="epost" id="epost" value="" required>
+            </div>
+            
+            <div class="content-group">
+                <label for="age">Ålder</label>
+                <select name="age" id="age" >
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                </select>
+            </div>
+            
+            
+            
+            <div class="content-group">
+                <h3>Dina intressen</h3>
+                
+                <script type="text/javascript">
+                    function addItem(){
+                    var ul = document.getElementById("dynamic-list");
+                    var intresse = document.getElementById("intresse");
+                    var li = document.createElement("li");
+                    li.setAttribute('id',intresse.value);
+                    li.appendChild(document.createTextNode(intresse.value));
+                    ul.appendChild(li);
+                    }
+                    
+                    function removeItem(){
+                    var ul = document.getElementById("dynamic-list");
+                    var intresse = document.getElementById("intresse");
+                    var item = document.getElementById(intresse.value);
+                    ul.removeChild(item);
+                    }
+                </script>
+                
+                    <input type="text" id="intresse"/>
+                    <button onclick="addItem()">add item</button>
+                    <button onclick="removeItem()">remove item</button>
+                    <ul id="dynamic-list"></ul>
+                    
+                    
+            
+            </div>
+            
+            
+            
+            <div class="content-group">
+                <h3>Boende</h3>
+                <input type="radio" name="boende" id="ja" value="Ja">
+                <label for="ja">Ja</label>
+                
+                <input type="radio" name="boende" id="nej" value="Nej">
+                <label for="nej">Nej</label>
+            </div>
+            
+
+       
+            
+            <div class="content-group">
+                <h3>Jag kan ta med</h3>
+                <input type="checkbox" name="tamed" id="tamed1" value="Sovsäck"> 
+                <label for="tamed1">Sovsäck</label>
+                <input type="checkbox" name="tamed" id="tamed2" value="Kudde"> 
+                <label for="tamed2">Kudde</label>
+                <input type="checkbox" name="tamed" id="tamed3" value="Liggunderlag"> 
+                <label for="tamed3">Liggunderlag</label>
+            </div>
+            
+            <input name="formSubmit" type="submit" value="Skicka" class="button-primary">
+            <input name="formClear" type="button" value="clear" class="button-secondary">
+    
+        </form>
+         
+        </div>
+    </body>
+</html>
+

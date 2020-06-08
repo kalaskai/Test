@@ -1,0 +1,106 @@
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+html {
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: #fff;
+    color: #545454;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5; 
+    margin-bottom: 3rem; 
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h2 {
+    
+}
+h3 {
+    margin-top: 0.4rem;
+}
+
+a {
+    color: #0083e8;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+.wrapper { 
+    max-width: 1280px; 
+    margin  :0 auto; 
+    background:#f3f3f3;
+}
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    align-items: flex-start;
+}
+ 
+.grid-content-box {
+    flex-wrap:wrap; 
+    align-self: stretch;
+    width: 25%;
+    box-sizing:border-box;
+    padding: 0 1.2rem  0 0;
+}
+.grid-content-box-inside {
+    padding: 0 0 0 1rem;
+    border:solid 1px #ccc; 
+    border-radius:.3rem;
+    box-sizing:inherit;
+    
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    flex-flow: column;
+    flex: 1 1 100%;
+
+}
+
+.inputform label {
+    display: block;
+    cursor: pointer;
+}
+
+.inputform input {
+    min-width: 20rem;
+    height: 1.5rem;
+    border:solid 1px #888888;
+    border-radius:.2rem;
+}
+.inputform select {
+    height: 1.5rem;
+    border:solid 1px #888888;
+    border-radius:.2rem;
+}
+.content-group {
+    margin:3rem 0;
+}
+
+
+
+
+
+    
