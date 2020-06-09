@@ -10,12 +10,10 @@ html {
 }
 
 body {
-    background: #fff;
     color: #545454;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     line-height: 1.5; 
-    margin-bottom: 3rem; 
 }
 
 h1, h2, h3 {
@@ -24,9 +22,6 @@ h1, h2, h3 {
     line-height: 1.3;
 }
 
-h2 {
-    
-}
 h3 {
     margin-top: 0.4rem;
 }
@@ -42,19 +37,22 @@ b, strong {
 
 img {
     max-width: 100%;
-}
 
+}
 .wrapper { 
     max-width: 1280px; 
     margin  :0 auto; 
-    background:#f3f3f3;
+    padding:2rem 0;
 }
-
+p.body-text-width {
+    max-width:50rem;
+}
 .flex-grid {
     display: flex;
     flex-wrap: wrap;
     -webkit-box-align: start;
     align-items: flex-start;
+    margin-bottom: 3rem;
 }
  
 .grid-content-box {
@@ -65,20 +63,27 @@ img {
     padding: 0 1.2rem  0 0;
 }
 .grid-content-box-inside {
-    padding: 0 0 0 1rem;
+    
     border:solid 1px #ccc; 
     border-radius:.3rem;
     box-sizing:inherit;
-    
     display: flex;
     position: relative;
     width: 100%;
     overflow: hidden;
     flex-flow: column;
     flex: 1 1 100%;
-
 }
-
+.grid-text-box{
+    padding: 0 0 0 1rem;
+    box-sizing:inherit;
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    flex-flow: column;
+    flex: 1 1 100%;
+}
 .inputform label {
     display: block;
     cursor: pointer;
@@ -87,12 +92,13 @@ img {
 .inputform input {
     min-width: 20rem;
     height: 1.5rem;
-    border:solid 1px #888888;
+    border:solid 1px #888;
     border-radius:.2rem;
+    margin-bottom: .5rem;
 }
 .inputform select {
     height: 1.5rem;
-    border:solid 1px #888888;
+    border:solid 1px #888;
     border-radius:.2rem;
 }
 .content-group {
