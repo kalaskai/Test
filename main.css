@@ -62,8 +62,8 @@ p.body-text-width {
     box-sizing:border-box;
     padding: 0 1.2rem  0 0;
 }
+
 .grid-content-box-inside {
-    
     border:solid 1px #ccc; 
     border-radius:.3rem;
     box-sizing:inherit;
@@ -74,15 +74,13 @@ p.body-text-width {
     flex-flow: column;
     flex: 1 1 100%;
 }
+.grid-content-box-inside:hover {
+    background:#f8f8f6;
+    cursor: pointer;
+}
 .grid-text-box{
     padding: 0 0 0 1rem;
-    box-sizing:inherit;
-    display: flex;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    flex-flow: column;
-    flex: 1 1 100%;
+    
 }
 .inputform label {
     display: block;
